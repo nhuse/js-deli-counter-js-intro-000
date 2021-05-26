@@ -5,13 +5,16 @@ function takeANumber(currentLine, newName) {
 
 function nowServing(currentLine) {
   if(currentLine.length === 0) {
-    return 'The line is currently empty.';
+    return 'There is nobody waiting to be served!';
   }
   return `Currently serving ${currentLine.shift()}.`;
 }
 
 function currentLine(currentLine) {
   let currentLineString = 'The line is currently: ';
+  if(if(currentLine.length === 0) {
+    return 'The line is currently empty.';
+  }
   for(let x = 0; x < currentLine.length; x++) {
     currentLineString = currentLineString + `${x+1}. ${currentLine[x]}`;
     if(x != currentLine.length-1) {
