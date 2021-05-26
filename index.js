@@ -12,7 +12,7 @@ function nowServing(currentLine) {
 
 function currentLine(currentLine) {
   let currentLineString = 'The line is currently: ';
-  if(if(currentLine.length === 0) {
+  if(currentLine.length === 0) {
     return 'The line is currently empty.';
   }
   for(let x = 0; x < currentLine.length; x++) {
