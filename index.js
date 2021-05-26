@@ -11,7 +11,7 @@ function nowServing(currentLine) {
 }
 
 function currentLine(currentLine) {
-  const currentLineString = 'The current line is: ';
+  let currentLineString = 'The current line is: ';
   for(let x = 0; x < currentLine.length; x++) {
     currentLineString = currentLineString + `${x+1}: ${currentLine[x]}`;
   }
