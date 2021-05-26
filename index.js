@@ -13,7 +13,7 @@ function nowServing(currentLine) {
 function currentLine(currentLine) {
   const currentLineString = 'The current line is: ';
   for(let x = 0; x < currentLine.length; x++) {
-    currentLineString.concat(`${x+1}: ${currentLine[x]}`);
+    currentLineString = currentLineString + `${x+1}: ${currentLine[x]}`;
   }
   return currentLineString;
 }
