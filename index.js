@@ -4,10 +4,10 @@ function takeANumber(currentLine, newName) {
 }
 
 function nowServing(currentLine) {
-  if(currentLine.length === 0) {
-    return 'There is nobody waiting to be served!';
+  if(currentLine.length !== 0) {
+    return `Currently serving ${currentLine.shift()}.`;
   }
-  return `Currently serving ${currentLine.shift()}.`;
+  return 'There is nobody waiting to be served!';
 }
 
 function currentLine(currentLine) {
