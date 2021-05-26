@@ -5,9 +5,8 @@ function takeANumber(currentLine, newName) {
 
 function nowServing(currentLine) {
   if(currentLine.length === 0) {
-    return 'There is nobody waiting to be served!';
+    return 'The line is currently empty.';
   }
-  console.log(currentLine.length);
   return `Currently serving ${currentLine.shift()}.`;
 }
 
