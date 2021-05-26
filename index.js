@@ -13,7 +13,7 @@ function nowServing(currentLine) {
 function currentLine(currentLine) {
   let currentLineString = 'The line is currently: ';
   for(let x = 0; x < currentLine.length; x++) {
-    currentLineString = currentLineString + `${x+1}. ${currentLine[x]}`;
+    currentLineString = currentLineString + `${x+1}. ${currentLine[x]}, `;
   }
   return currentLineString;
 }
