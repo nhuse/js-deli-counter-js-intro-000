@@ -7,7 +7,7 @@ function nowServing(currentLine) {
   if(currentLine.length===0) {
     return 'There is nobody waiting to be served!';
   }
-  return currentLine.shift();
+  return `Next in line is ${currentLine.shift()}. Thanks for waiting!`;
 }
 
 function currentLine(currentLine) {
